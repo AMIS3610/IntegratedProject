@@ -1,0 +1,7 @@
+<h1>User<h1>
+    <div *ngIf="authService.isLoggedIn()">
+ <h2>You are logged in and can access your profile</h2>
+</div>
+<div *ngIf="!authService.isLoggedIn()">
+ <h2>You are not logged in. Come on man. Get with the program.</h2>
+</div>
