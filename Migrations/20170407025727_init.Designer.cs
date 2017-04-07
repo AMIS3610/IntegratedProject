@@ -8,7 +8,7 @@ using VolunteerApi.Data;
 namespace VolunteerApi.Migrations
 {
     [DbContext(typeof(VolunteerContext))]
-    [Migration("20170407023523_init")]
+    [Migration("20170407025727_init")]
     partial class init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

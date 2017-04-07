@@ -4,7 +4,7 @@ import { AuthService } from '../../auth.service';
 
 @Component({
     selector: 'user-home-page',
-    templateUrl: './app/components/user/user.component.html'
+    templateUrl: './app/Components/user/user.component.html'
 })
 export class UserComponent {
     //Was Quotes Component

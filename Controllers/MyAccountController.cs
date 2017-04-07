@@ -17,21 +17,21 @@ namespace VolunteerApi.Controllers
             public MyAccountController(VolunteerContext context) {
                 db = context;
             }
-            //Support for the root collection of Quotes
+            //Support for the root collection of accounts
             [HttpGet] 
             public IActionResult GetAccounts() 
                 {  
                     return Ok(db.Accounts); 
                 }    
 
-            //Support for getting a single quote by updating the Get Method    
+            //Support for getting a single account by updating the Get Method    
             [HttpGet("{id}")]   
             public IActionResult Get(int id)   
                 {    
                     return Ok(db.Accounts.Find(id));  
                 } 
 
-            //Support for posting a Quote by updating the Post Method
+            //Support for posting a account by updating the Post Method
             [HttpPost] 
             public IActionResult Post([FromBody] Account account) 
                 {  
@@ -40,7 +40,7 @@ namespace VolunteerApi.Controllers
                     return CreatedAtRoute("GetAccount", new { id = account.Id }, account); 
                 }
 
-            //Support for putting an existing quote back in the collection by updating Put Method
+            //Support for putting an existing account back in the collection by updating Put Method
             [HttpPut("{id}")] 
             public IActionResult Put(int id, [FromBody] Account account) 
                 {  

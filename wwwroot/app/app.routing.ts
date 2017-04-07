@@ -1,10 +1,10 @@
 import { ModuleWithProviders } from "@angular/core";
 import { Routes, RouterModule } from "@angular/router";
 
-import { HomeComponent } from './components/home/home.component';
-import { UserComponent } from './components/user/user.component';
-import { ListingsComponent } from './components/listings/listings.component';
-import { LoginComponent } from './components/login/login.component';
+import { HomeComponent } from './Components/home/home.component';
+import { UserComponent } from './Components/user/user.component';
+import { ListingsComponent } from './Components/listings/listings.component';
+import { LoginComponent } from './Components/login/login.component';
 
 
 

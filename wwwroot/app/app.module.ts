@@ -6,11 +6,11 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import 'rxjs/Rx';
 
 import { AppComponent } from './app.component';
-import { HomeComponent } from './components/home/home.component';
-import { NavBarComponent } from './components/navbar/navbar.component';
-import { LoginComponent } from './components/login/login.component';
-import { ListingsComponent } from './components/listings/listings.component';
-import { UserComponent } from './components/user/user.component';
+import { HomeComponent } from './Components/home/home.component';
+import { NavBarComponent } from './Components/navbar/navbar.component';
+import { LoginComponent } from './Components/login/login.component';
+import { ListingsComponent } from './Components/listings/listings.component';
+import { UserComponent } from './Components/user/user.component';
 
 import { AppRouting } from './app.routing';
 import { AuthService } from "./auth.service";

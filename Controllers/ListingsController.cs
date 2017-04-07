@@ -17,30 +17,30 @@ namespace VolunteerApi.Controllers
             public ListingsController(VolunteerContext context) {
                 db = context;
             }
-            //Support for the root collection of Quotes
+            //Support for the root collection of Listings
             [HttpGet] 
-            public IActionResult GetQuotes() 
+            public IActionResult GetListings() 
                 {  
                     return Ok(db.Listings); 
                 }    
 
-            //Support for getting a single quote by updating the Get Method    
+            //Support for getting a single listing by updating the Get Method    
             [HttpGet("{id}")]   
             public IActionResult Get(int id)   
                 {    
                     return Ok(db.Listings.Find(id));  
                 } 
 
-            //Support for posting a Quote by updating the Post Method
+            //Support for posting a listing by updating the Post Method
             [HttpPost] 
             public IActionResult Post([FromBody] Listing listing) 
                 {  
-                    var newClaim = db.Listings.Add(listing);             
+                    var newListing = db.Listings.Add(listing);             
                     db.SaveChanges();             
-                    return CreatedAtRoute("GetClaim", new { id = listing.Id }, listing); 
+                    return CreatedAtRoute("GetListing", new { id = listing.Id }, listing); 
                 }
 
-            //Support for putting an existing quote back in the collection by updating Put Method
+            //Support for putting an existing listing back in the collection by updating Put Method
             [HttpPut("{id}")] 
             public IActionResult Put(int id, [FromBody] Listing listing) 
                 {  
