@@ -4,5 +4,5 @@ import { Component } from '@angular/core';
     templateUrl: './app/Components/listings/listings.component.html'
 })
 export class ListingsComponent {
-    //Was ClaimsComponent
+    
 }

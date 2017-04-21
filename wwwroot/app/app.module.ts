@@ -11,6 +11,7 @@ import { NavBarComponent } from './Components/navbar/navbar.component';
 import { LoginComponent } from './Components/login/login.component';
 import { ListingsComponent } from './Components/listings/listings.component';
 import { UserComponent } from './Components/user/user.component';
+import { MyListingsComponent } from './Components/mylistings/mylistings.component'
 
 import { AppRouting } from './app.routing';
 import { AuthService } from "./auth.service";
@@ -24,7 +25,8 @@ import { AuthHttp } from "./auth.http";
         NavBarComponent,
         LoginComponent,
         UserComponent,
-        ListingsComponent
+        ListingsComponent,
+        MyListingsComponent
     ],
     imports: [
         BrowserModule,

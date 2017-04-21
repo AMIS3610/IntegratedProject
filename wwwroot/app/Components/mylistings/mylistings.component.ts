@@ -2,12 +2,11 @@ import { Component } from '@angular/core';
 import { AuthService } from '../../auth.service';
 
 @Component({
-    selector: 'user-home-page',
-    templateUrl: './app/Components/user/user.component.html'
+    selector: 'mylistings-home-page',
+    templateUrl: './app/Components/mylistings/mylistings.component.html'
 })
-export class UserComponent {
-    //Was Quotes Component
+export class MyListingsComponent {
     constructor(
         private authService: AuthService
-    ){}
+    ){}    
 }
